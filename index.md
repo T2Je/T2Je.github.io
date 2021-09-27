@@ -26,7 +26,7 @@ Jenkins, Email plugins
 
 在 Jenkins plugin manager 页面搜索需要的plugins。这里我们需要下载两个和email 相关的插件：`Email Extension Plugin` 和 `Email Extension Plugin`.
 
-![install_plugins](/Users/xiaoyang/Desktop/Blog/Jenkins-Email/install_plugins.png)
+![install_plugins](https://github.com/T2Je/T2Je.github.io/blob/main/CI/Images/email_plugins.png?raw=true)
 
 
 
@@ -36,13 +36,13 @@ Jenkins, Email plugins
 
 前往 Manage Jenkins -> Configure System. 滑动找到 email notification 区域， 如果你使用企业邮箱作为你的SMTP server，选择`Use SMTP authentication`输入 `SMTP server` ，点击 `Advanced` ，输入用户名、密码，选择 `Use SSL`，`SMTP port` （465），保存。
 
-![email_extended](/Users/xiaoyang/Desktop/Blog/Jenkins-Email/email_extended.png)
+![email_extended](https://github.com/T2Je/T2Je.github.io/blob/main/CI/Images/configure_email.png?raw=true)
 
 #### 2. Test Email Configuration
 
 ##### 1. 使用 `Configure System` 页面的 test email 功能
 
-![test_email_configure_system](/Users/xiaoyang/Desktop/Blog/Jenkins-Email/test_email_configure_system.png)
+![test_email_configure_system](https://github.com/T2Je/T2Je.github.io/blob/main/CI/Images/test_email_configuration.png?raw=true)
 
 ##### 2. 使用Pipeline 测试邮件发送
 
@@ -73,7 +73,7 @@ pipeline {
 
 进入工程中，选择 `Configure` ，滑动到底部，选择 `Add post-build action`，选择 `Editable Email Notification Templates`
 
-<img src="/Users/xiaoyang/Desktop/Blog/Jenkins-Email/add_post_build_action.png" alt="add_post_build_action" style="zoom: 33%;" />
+<img src="https://github.com/T2Je/T2Je.github.io/blob/main/CI/Images/post_build_action.png?raw=true" alt="add_post_build_action" style="zoom: 33%;" />
 
 
 
